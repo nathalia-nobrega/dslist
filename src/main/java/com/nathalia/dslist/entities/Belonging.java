@@ -7,8 +7,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Objects;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
@@ -16,7 +14,7 @@ import java.util.Objects;
 @Table(name = "TB_BELONGING")
 public class Belonging {
     @EmbeddedId
-    private BelongingPk id = new BelongingPk();
+    private BelongingId id = new BelongingId();
     private Integer position;
 
     public Belonging(Game game, GameList list, Integer position) {

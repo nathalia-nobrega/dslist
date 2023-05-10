@@ -14,7 +14,7 @@ import java.util.Objects;
 @AllArgsConstructor
 @Data
 @Embeddable
-public class BelongingPk implements Serializable {
+public class BelongingId implements Serializable {
     @ManyToOne
     @JoinColumn(name = "game_id")
     private Game game;
@@ -26,7 +26,7 @@ public class BelongingPk implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BelongingPk that = (BelongingPk) o;
+        BelongingId that = (BelongingId) o;
         return Objects.equals(game, that.game) && Objects.equals(list, that.list);
     }
 

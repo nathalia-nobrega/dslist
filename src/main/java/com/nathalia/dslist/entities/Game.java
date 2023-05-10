@@ -3,12 +3,14 @@ package com.nathalia.dslist.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serializable;
+
 @Entity
 @Table(name = "TB_GAME")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Game {
+public class Game implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Setter(AccessLevel.PROTECTED)
