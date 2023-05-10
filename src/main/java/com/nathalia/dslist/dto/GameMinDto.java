@@ -1,5 +1,7 @@
 package com.nathalia.dslist.dto;
 
+import com.nathalia.dslist.entities.Game;
+import com.nathalia.dslist.projections.GameMinDtoProjection;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -19,7 +21,19 @@ public class GameMinDto {
     private String img_url;
     private String short_description;
 
-    public Long getId() {
-        return id;
+    public GameMinDto(Game game) {
+        id = game.getId();
+        title = game.getTitle();
+        game_year = game.getGame_year();
+        img_url = game.getImg_url();
+        short_description = game.getShort_description();
+    }
+
+    public GameMinDto(GameMinDtoProjection gameProjection) {
+        id = gameProjection.getId();
+        title = gameProjection.getTitle();
+        game_year = gameProjection.getYear();
+        img_url = gameProjection.getImgUrl();
+        short_description = gameProjection.getShortDescription();
     }
 }
