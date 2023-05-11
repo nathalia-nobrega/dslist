@@ -1,5 +1,5 @@
-# Projeto DSList - Intensivão Java Spring
-### Descrição do projeto
+# Projeto DSList - Intensivão Java Spring 
+##### O DSList é um sistema de listagem de jogos. Implementado com padrão REST, esta API dá suporte à comunicação Cliente/Servidor com HTTP, e é arquitetada com o auxílio do padrão de camadas MVC.
 
 Tabela de conteúdos
 =================
@@ -23,6 +23,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - PostgreSQL
 - [Project Lombok](https://projectlombok.org/)
 - [Railway](https://railway.app/)
+- [Postman](https://www.postman.com/)
 ---
 ### Autora
 
