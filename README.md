@@ -4,9 +4,8 @@
 Tabela de conteúdos
 =================
 <!--ts-->
-* [Sobre](#Sobre)
-* [Features](#Features)
-* [Tecnologias](#Tecnologias)
+* [Sobre](#-sobre)
+* [Tecnologias](#-tecnologias)
 <!--te-->
 
 ## 🎯 Sobre
