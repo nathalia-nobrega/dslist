@@ -19,12 +19,14 @@ public class GameListServiceImpl implements GameListService {
     private final GameListRepository repository;
     private final GameServiceImpl gameService;
     private final GameRepository gameRepository;
+    private final BelongingServiceImpl belongingService;
 
     @Autowired
-    public GameListServiceImpl(GameListRepository repository, GameServiceImpl gameService, GameRepository gameRepository) {
+    public GameListServiceImpl(GameListRepository repository, GameServiceImpl gameService, GameRepository gameRepository, BelongingServiceImpl belongingService) {
         this.repository = repository;
         this.gameService = gameService;
         this.gameRepository = gameRepository;
+        this.belongingService = belongingService;
     }
 
     @Transactional(readOnly = true)
@@ -43,8 +45,20 @@ public class GameListServiceImpl implements GameListService {
     }
 
     @Transactional
-    public List<GameMinDtoProjection> move(Long listId, Integer initialIndex, Integer destinationIndex) {
-        return null;
+    public Integer move(Long listId, Integer initialIndex, Integer destinationIndex) {
+        // get the id for each of the games (the one to be moved and the one that is in the destinationIndex)
+        Long sourceGameId = gameRepository.findGameByList(2L).get(initialIndex).getId();
+        Long destinationGameId = gameRepository.findGameByList(2L).get(destinationIndex).getId();
+
+        // delete them from belonging table
+        this.belongingService.deleteByGameId(sourceGameId);
+        this.belongingService.deleteByGameId(destinationGameId);
+
+        // insert them back with the swapped indexes
+        this.belongingService.save(destinationIndex, listId, sourceGameId);
+        this.belongingService.save(initialIndex, listId, destinationGameId);
+
+        return 0;
     }
 
     public GameListDto convertToDto(GameList gameList) {

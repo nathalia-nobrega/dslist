@@ -1,5 +1,6 @@
 package com.nathalia.dslist.entities;
 
+import com.nathalia.dslist.projections.BelongingProjection;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -20,6 +21,12 @@ public class Belonging {
     public Belonging(Game game, GameList list, Integer position) {
         this.id.setGame(game);
         this.id.setList(list);
+    }
+
+    public Belonging(BelongingProjection projection) {
+        this.id.getGame().setId(projection.getGameId());
+        this.id.getList().setId(projection.getListId());
+        this.position = projection.getPosition();
     }
 
 }

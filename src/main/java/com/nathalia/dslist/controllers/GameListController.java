@@ -40,7 +40,7 @@ public class GameListController {
     }
 
     @PutMapping(value = "/{id}/games/replacement")
-    public List<GameMinDtoProjection> move(@PathVariable Long id, @RequestBody ReplacementDto body) {
+    public Integer move(@PathVariable Long id, @RequestBody ReplacementDto body) {
         return gameListService.move(id, body.getSourceIndex(), body.getDestinationIndex());
     }
 
