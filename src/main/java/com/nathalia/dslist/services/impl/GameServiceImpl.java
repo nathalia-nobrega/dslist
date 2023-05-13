@@ -52,8 +52,16 @@ public class GameServiceImpl implements GameService {
         return new ModelMapper().map(game, GameDto.class);
     }
 
+    public Game convertDtoToEntity(GameDto gameDto) {
+        return new ModelMapper().map(gameDto, Game.class);
+    }
+
     public GameMinDto convertEntityToMinDto(Game game) {
         return new ModelMapper().map(game, GameMinDto.class);
+    }
+
+    public GameMinDto convertDtoToMinDto(GameDto gameDto) {
+        return new ModelMapper().map(gameDto, GameMinDto.class);
     }
 
     public GameMinDto convertProjectionToMinDto(GameMinDtoProjection gameProjection) {

@@ -2,13 +2,12 @@ package com.nathalia.dslist.controllers;
 
 import com.nathalia.dslist.dto.GameListDto;
 import com.nathalia.dslist.dto.GameMinDto;
+import com.nathalia.dslist.dto.ReplacementDto;
+import com.nathalia.dslist.projections.GameMinDtoProjection;
 import com.nathalia.dslist.services.impl.GameListServiceImpl;
 import com.nathalia.dslist.services.impl.GameServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -39,5 +38,11 @@ public class GameListController {
     public List<GameListDto> findAll() {
         return gameListService.findAll();
     }
+
+    @PutMapping(value = "/{id}/games/replacement")
+    public List<GameMinDtoProjection> move(@PathVariable Long id, @RequestBody ReplacementDto body) {
+        return gameListService.move(id, body.getSourceIndex(), body.getDestinationIndex());
+    }
+
 
 }
