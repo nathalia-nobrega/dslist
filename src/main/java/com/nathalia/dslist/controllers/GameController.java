@@ -2,7 +2,8 @@ package com.nathalia.dslist.controllers;
 
 import com.nathalia.dslist.dto.GameDto;
 import com.nathalia.dslist.dto.GameMinDto;
-import com.nathalia.dslist.services.GameService;
+import com.nathalia.dslist.services.impl.GameServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,9 +14,10 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/games")
 public class GameController {
-    private final GameService service;
+    private final GameServiceImpl service;
 
-    public GameController(GameService service) {
+    @Autowired
+    public GameController(GameServiceImpl service) {
         this.service = service;
     }
 

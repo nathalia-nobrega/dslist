@@ -2,8 +2,9 @@ package com.nathalia.dslist.controllers;
 
 import com.nathalia.dslist.dto.GameListDto;
 import com.nathalia.dslist.dto.GameMinDto;
-import com.nathalia.dslist.services.GameListService;
-import com.nathalia.dslist.services.GameService;
+import com.nathalia.dslist.services.impl.GameListServiceImpl;
+import com.nathalia.dslist.services.impl.GameServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,10 +16,11 @@ import java.util.List;
 @RequestMapping("/list")
 public class GameListController {
 
-    private final GameListService gameListService;
-    private final GameService gameService;
+    private final GameListServiceImpl gameListService;
+    private final GameServiceImpl gameService;
 
-    public GameListController(GameListService gameListService, GameService gameService) {
+    @Autowired
+    public GameListController(GameListServiceImpl gameListService, GameServiceImpl gameService) {
         this.gameListService = gameListService;
         this.gameService = gameService;
     }

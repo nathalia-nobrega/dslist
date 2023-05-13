@@ -8,7 +8,9 @@ Tabela de conteúdos
 
 * [Sobre](#-sobre)
 * [Tecnologias](#-tecnologias-e-ferramentas)
+* [Features](#-features)
 * [Implantação em desenvolvimento](#-implantação-em-desenvolvimento-e-testes)
+* [Implantação em homologação](#-implantação-em-homologação)
 * [Implantação em produção](#-implantação-em-produção)
 
 <!--te-->  
@@ -31,24 +33,31 @@ arquitetura REST.
 
 <p align="left">
 <a href="https://www.jetbrains.com/idea/" target="_blank" rel="noreferrer"> <img src="https://resources.jetbrains.com/storage/products/company/brand/logos/IntelliJ_IDEA_icon.svg?_gl=1*1ls50uz*_ga*MTEwNzIzOTY3LjE2ODMyNDQ0Mzg.*_ga_9J976DJZ68*MTY4MzgyMDMxOC44LjAuMTY4MzgyMDMyNi41Mi4wLjA.&_ga=2.233017118.1603209044.1683820318-110723967.1683244438" alt="intellij idea" width="40" height="40"/> </a>
-	<a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://swagger.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/gilbarbara/logos/main/logos/swagger.svg" alt="swagger" width="40" height="40"/> </a>  
+	<a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a>
 	<a href="https://railway.app/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/railway.svg" alt="railway" width="40" height="40"/> </a>  
 </p>
 
-- [Spring HATEOAS](https://spring.io/projects/spring-hateoas) * (ferramenta adicional)
 - JPA / Hibernate
 - H2 Database
 - [Project Lombok](https://projectlombok.org/) * (ferramenta adicional)
-
 ---  
 
+### 🚀 Features
+
+- [x] Listagem de Jogos (Single e All)
+- [x] Listagem de Jogos de acordo com a categoria
+- [x] Atualizar posição dos jogos nas listas
+- [ ] Cadastro de Jogos (Em progresso)
+
 ## ✅ Implantação em desenvolvimento e testes
-
 - Banco de Dados: H2
-
-## ✅ Implantação em produção
-
+## ✅ Implantação em homologação
 - Banco de Dados: PostgreSQL
+## ✅ Implantação em produção
+- Serviço de deploy e CI/CD: Railway
+- Banco de Dados: PostgreSQL
+
+## [🔗 Domínio Público](dslist-production-4b95.up.railway.app)
 
 ### Autora
 
