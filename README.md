@@ -27,8 +27,6 @@ arquitetura REST.
 
 Fique à vontade para explorar o código-fonte, enviar feedbacks ou colaborar com sugestões. Sua contribuição é muito bem-vinda!
 
-Gratidão ao professor Nélio Alves e à escola DevSuperior por fornecerem um treinamento excepcional e inspirador para aprimorar minhas habilidades como desenvolvedora.
-
 ## 🛠 Tecnologias e ferramentas
 
 ### Tecnologias
