@@ -3,7 +3,6 @@ package com.nathalia.dslist.controllers;
 import com.nathalia.dslist.dto.GameListDto;
 import com.nathalia.dslist.dto.GameMinDto;
 import com.nathalia.dslist.dto.ReplacementDto;
-import com.nathalia.dslist.projections.GameMinDtoProjection;
 import com.nathalia.dslist.services.impl.GameListServiceImpl;
 import com.nathalia.dslist.services.impl.GameServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

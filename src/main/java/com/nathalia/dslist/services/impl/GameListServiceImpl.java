@@ -3,7 +3,6 @@ package com.nathalia.dslist.services.impl;
 import com.nathalia.dslist.dto.GameListDto;
 import com.nathalia.dslist.entities.GameList;
 import com.nathalia.dslist.exceptions.GameNotFoundException;
-import com.nathalia.dslist.projections.GameMinDtoProjection;
 import com.nathalia.dslist.repositories.GameListRepository;
 import com.nathalia.dslist.repositories.GameRepository;
 import com.nathalia.dslist.services.GameListService;
@@ -17,14 +16,12 @@ import java.util.List;
 @Service
 public class GameListServiceImpl implements GameListService {
     private final GameListRepository repository;
-    private final GameServiceImpl gameService;
     private final GameRepository gameRepository;
     private final BelongingServiceImpl belongingService;
 
     @Autowired
     public GameListServiceImpl(GameListRepository repository, GameServiceImpl gameService, GameRepository gameRepository, BelongingServiceImpl belongingService) {
         this.repository = repository;
-        this.gameService = gameService;
         this.gameRepository = gameRepository;
         this.belongingService = belongingService;
     }
