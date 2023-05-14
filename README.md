@@ -2,6 +2,7 @@
 
 #### O DSList é um sistema de listagem de jogos implementado com padrão REST. Esta API dá suporte à comunicação Cliente/Servidor com HTTP, e é arquitetada com o auxílio do padrão de camadas MVC.
 
+
 Tabela de conteúdos
 =================  
 <!--ts-->  
@@ -12,6 +13,7 @@ Tabela de conteúdos
 * [Implantação em desenvolvimento](#-implantação-em-desenvolvimento-e-testes)
 * [Implantação em homologação](#-implantação-em-homologação)
 * [Implantação em produção](#-implantação-em-produção)
+* [Documentação](#-documentação-da-api)
 
 <!--te-->  
 
@@ -22,6 +24,10 @@ pela [DevSuperior](https://www.youtube.com/devsuperior).
 
 A aplicação consiste em uma listagem de jogos eletrônicos, onde os dados são coletados de uma API que implementa a
 arquitetura REST.
+
+Fique à vontade para explorar o código-fonte, enviar feedbacks ou colaborar com sugestões. Sua contribuição é muito bem-vinda!
+
+Gratidão ao professor Nélio Alves e à escola DevSuperior por fornecerem um treinamento excepcional e inspirador para aprimorar minhas habilidades como desenvolvedora.
 
 ## 🛠 Tecnologias e ferramentas
 
@@ -57,11 +63,14 @@ arquitetura REST.
 - Serviço de deploy e CI/CD: Railway
 - Banco de Dados: PostgreSQL
 
-## [🔗 Domínio Público](dslist-production-4b95.up.railway.app)
+## 🧾 Documentação da API
 
-### Autora
+Se você deseja testar a API e conhecer os endpoints, você pode referir à documentação gerada automaticamente pelo Postman:
+[DSList PRO API Docs](https://documenter.getpostman.com/view/24890961/2s93eePU5d)
 
-Feito com ❤️ por Nathalia Nóbrega 👋 Entre em contato!
+## [🔗 Domínio Público](https://dslist-production-4b95.up.railway.app)
+
+### Contato
 
 [![Linkedin Badge](https://img.shields.io/badge/-Nathalia-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/nathalia-nobrega/)](https://www.linkedin.com/in/nathalia-nobrega/)  
 [![Gmail Badge](https://img.shields.io/badge/-ttnast05@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:ttnast05@gmail.com)](mailto:ttnast05@gmail.com)
