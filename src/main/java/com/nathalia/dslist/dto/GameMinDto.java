@@ -1,6 +1,6 @@
 package com.nathalia.dslist.dto;
 
-import com.nathalia.dslist.entities.Game;
+import com.nathalia.dslist.model.Game;
 import com.nathalia.dslist.projections.GameMinDtoProjection;
 import lombok.Data;
 import lombok.NoArgsConstructor;

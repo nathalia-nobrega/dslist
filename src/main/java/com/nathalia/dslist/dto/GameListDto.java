@@ -1,6 +1,6 @@
 package com.nathalia.dslist.dto;
 
-import com.nathalia.dslist.entities.GameList;
+import com.nathalia.dslist.model.GameList;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.BeanUtils;

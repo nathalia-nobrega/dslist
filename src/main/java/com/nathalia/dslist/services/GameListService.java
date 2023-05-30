@@ -1,7 +1,7 @@
 package com.nathalia.dslist.services;
 
 import com.nathalia.dslist.dto.GameListDto;
-import com.nathalia.dslist.entities.GameList;
+import com.nathalia.dslist.model.GameList;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;

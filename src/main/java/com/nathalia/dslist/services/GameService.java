@@ -2,7 +2,7 @@ package com.nathalia.dslist.services;
 
 import com.nathalia.dslist.dto.GameDto;
 import com.nathalia.dslist.dto.GameMinDto;
-import com.nathalia.dslist.entities.Game;
+import com.nathalia.dslist.model.Game;
 import com.nathalia.dslist.exceptions.GameNotFoundException;
 import com.nathalia.dslist.projections.GameMinDtoProjection;
 import org.springframework.transaction.annotation.Transactional;

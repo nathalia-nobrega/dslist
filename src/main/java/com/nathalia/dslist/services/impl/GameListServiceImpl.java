@@ -1,7 +1,7 @@
 package com.nathalia.dslist.services.impl;
 
 import com.nathalia.dslist.dto.GameListDto;
-import com.nathalia.dslist.entities.GameList;
+import com.nathalia.dslist.model.GameList;
 import com.nathalia.dslist.exceptions.GameNotFoundException;
 import com.nathalia.dslist.repositories.GameListRepository;
 import com.nathalia.dslist.repositories.GameRepository;

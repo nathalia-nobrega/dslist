@@ -1,7 +1,7 @@
 package com.nathalia.dslist.repositories;
 
-import com.nathalia.dslist.entities.Belonging;
-import com.nathalia.dslist.entities.BelongingId;
+import com.nathalia.dslist.model.Belonging;
+import com.nathalia.dslist.model.BelongingId;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
